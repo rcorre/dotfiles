@@ -1,3 +1,5 @@
 .ssh/*
 !.ssh/config
+.gnupg/*
+!.gnupg/*.conf
 .lesshst
