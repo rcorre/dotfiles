@@ -1,0 +1,70 @@
+[alias]
+	st      = status
+	br      = branch
+	ci      = commit -v
+	ca      = commit -va
+	cm      = commit -m
+	cma     = commit -am
+	cmend   = commit -v --amend
+	cmendr  = commit --amend --reuse-message=HEAD
+	cmendra = commit -a --amend --reuse-message=HEAD
+	co      = checkout
+	fo      = !git fetch && git checkout origin/master
+	fu      = !git fetch upstream && git checkout upstream/master
+	rebo    = rebase origin/master
+	sho     = show --name-status
+	dif     = diff --name-status
+	difo    = diff --name-only
+	difc    = diff --cached --name-status
+	difco   = diff --cached --name-only
+	diffc   = diff --cached
+	lo      = log --oneline
+	graph   = log --graph --decorate=full --oneline --all
+	fetcha  = fetch --all
+	cp      = cherry-pick
+	msg     = log -1 --format=msg
+	vim     = !nvim -p $(git diff HEAD~ --name-only)
+	sync    = !git pull --no-edit && git push
+	wip     = !git add . && git cm wip && git push origin HEAD:wip -f
+	pu      = !git push -u
+
+	# identifying and removing merged branches
+	junk = "!f() { git for-each-ref refs/heads --format '%(refname:strip=2)' --merged $1; }; f"
+	deljunk = "!f() { git branch -D $(git junk HEAD); }; f"
+
+	all = "!f() { fd -t d -H .git | xargs dirname | sort | uniq | while read d; do echo ---$d--- && git -C $d $@; done; }; f"
+[color]
+	ui = auto
+[core]
+	editor = nvim
+	excludesfile = ~/dotfiles/gitignore-global
+[user]
+	name = Ryan Roden-Corrent
+	email = ryan@rcorre.net
+	signingkey = "Ryan Roden-Corrent"
+[push]
+	default = current
+[merge]
+	tool = vimdiff
+[mergetool "vimdiff"]
+	cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[rebase]
+	autosquash = true
+[pretty]
+	msg = format:%s%n%n%b
+[fetch]
+	prune = true
+[gitreview]
+    remote = origin
+    rebase = false
+
+# vim: noexpandtab
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
