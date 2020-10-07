@@ -1,0 +1,5 @@
+quickmarks
+bookmarks/
+.mypy_cache/
+qsettings/
+local_config.py
