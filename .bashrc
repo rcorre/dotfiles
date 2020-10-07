@@ -11,13 +11,13 @@ export BROWSER=qutebrowser
 export HISTSIZE=50000
 export HISTCONTROL=erasedups
 export XDG_DESKTOP_DIR="$HOME"
-export FZF_DEFAULT_COMMAND='fd --hidden --no-ignore-vcs --type l --type f --ignore-file ~/dotfiles/fdignore'
-export RIPGREP_CONFIG_PATH="$HOME/dotfiles/ripgreprc"
+export FZF_DEFAULT_COMMAND='fd --hidden --no-ignore-vcs --type l --type f'
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/rc"
 
 # colors and prompt
 alias ls='ls --color=auto'
 alias l='ls -ltrh'
-[[ -f ~/dotfiles/dircolors.256dark ]] && eval `dircolors ~/dotfiles/dircolors.256dark`
+[[ -f ~/.config/dircolors.256dark ]] && eval `dircolors ~/.config/dircolors.256dark`
 PS1='[\u@\h \W]\$ '
 
 set -o vi                # vi command line editing
