@@ -1,0 +1,11 @@
+*.o
+*.a
+*.use
+*.pyc
+.git/
+.mypy_cache/
+.venv
+.clangd/
+CMakeFiles/
+Session.vim
+.tox/
