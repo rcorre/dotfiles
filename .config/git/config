@@ -37,7 +37,7 @@
 	ui = auto
 [core]
 	editor = nvim
-	excludesfile = ~/dotfiles/gitignore-global
+	excludesfile = ~/.config/git/ignore
 [user]
 	name = Ryan Roden-Corrent
 	email = ryan@rcorre.net
@@ -57,8 +57,6 @@
 [gitreview]
     remote = origin
     rebase = false
-
-# vim: noexpandtab
 [commit]
 	gpgsign = true
 [filter "lfs"]
