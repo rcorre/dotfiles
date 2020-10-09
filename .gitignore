@@ -3,3 +3,15 @@
 .gnupg/*
 !.gnupg/*.conf
 .lesshst
+src/
+.ssh-agent-thing
+.fasd
+.bash_history
+doc
+.steam*
+.Xauthority
+.cache/
+.nv/
+.password-store/
+.pki/
+.pulse-cookie
