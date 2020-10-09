@@ -1,0 +1,8 @@
+keybase/
+nvim/
+sddm/
+Steam/
+vulkan/
+xorg/
+qutebrowser/*
+!qutebrowser/userscripts/
