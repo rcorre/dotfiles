@@ -1,6 +1,6 @@
 # dwm statusbar loop
 while true; do
-    bash ~/dotfiles/dwmstatus
+    bash ~/bin/dwmstatus
     sleep 1s
 done &
 
