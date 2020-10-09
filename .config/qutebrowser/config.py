@@ -64,7 +64,6 @@ c.bindings.commands = {
         ',ej': 'spawn st -e nvim {}'.format(js_whitelist),
         ';r': 'hint --rapid all tab-bg',
         ';m': 'hint links run :bookmark-add {hint-url} ""',
-        'ta': 'set-cmd-text -s :spawn --userscript taskadd',
     },
     'command': {
         '<ctrl+k>': 'rl-backward-kill-word',
