@@ -1,0 +1,40 @@
+SyncState *
+Create Slave
+
+IMAPAccount fastmail
+Host mail.messagingengine.com
+User rcore@fastmail.fm
+PassCmd "pass mail/fastmail-app"
+UseIMAPS yes
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore fastmail-remote
+Account fastmail
+
+MaildirStore fastmail-local
+Path ~/Mail/fastmail/
+Inbox ~/Mail/fastmail/INBOX
+
+Channel fastmail-inbox
+Master :fastmail-remote:"INBOX"
+Slave :fastmail-local:"Inbox"
+
+Channel fastmail-archive
+Master :fastmail-remote:"INBOX/Archive"
+Slave :fastmail-local:"Archive"
+
+Channel fastmail-drafts
+Master :fastmail-remote:"INBOX/Drafts"
+Slave :fastmail-local:"Drafts"
+
+Channel fastmail-sent
+Master :fastmail-remote:"INBOX/Sent Items"
+Slave :fastmail-local:"Sent"
+
+Channel fastmail-junk
+Master :fastmail-remote:"INBOX/Junk Mail"
+Slave :fastmail-local:"Junk"
+
+Channel fastmail-trash
+Master :fastmail-remote:"INBOX/Trash"
+Slave :fastmail-local:"Trash"
