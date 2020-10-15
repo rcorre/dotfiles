@@ -1,11 +1,18 @@
+.git/
+Session.vim
+
+# C++
+.clangd/
+CMakeFiles/
 *.o
 *.a
 *.use
+
+# python
 *.pyc
-.git/
+.tox/
 .mypy_cache/
 .venv
-.clangd/
-CMakeFiles/
-Session.vim
-.tox/
+
+# godot
+.import/
