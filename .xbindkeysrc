@@ -22,7 +22,7 @@
     Mod4 + Shift + P
 "qutebrowser --backend webengine"
     Mod4 + Q
-"st -t mutt mutt"
+"st -t mutt neomutt"
     Mod4 + U
 "sh -c 'maim /tmp/$(date +%s).png -s'"
     Mod4 + S
