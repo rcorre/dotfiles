@@ -6,3 +6,13 @@ pavucontrol.ini
 pulse/
 qutebrowser/js_whitelist.py
 systemd/
+hub
+QtProject.conf
+dconf/
+discord/
+gops/
+gtk-3.0/
+inkscape/extension-errors.log
+itch/
+transmission/
+unity3d/
