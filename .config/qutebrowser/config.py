@@ -18,10 +18,11 @@ c.content.geolocation = False
 c.hints.uppercase = True
 # c.hints.find_implementation = 'python' # change to javascript if bad results
 c.fonts.default_family = "Hack"
-c.fonts.default_size = "12pt"
+c.fonts.default_size = "10pt"
 c.completion.open_categories = ['quickmarks', 'bookmarks', 'history']
 c.logging.level.console = 'warning'
 c.logging.level.ram = 'warning'
+c.qt.highdpi = True
 
 config.set('content.register_protocol_handler', True, 'calendar.google.com')
 config.set('content.notifications', True, 'calendar.google.com')
@@ -72,6 +73,7 @@ c.bindings.commands = {
     'insert': {
         '<ctrl+p>': 'spawn -u pass {url:host} 0',
         '<ctrl+u>': 'spawn -u pass {url:host} 1',
+        '<ctrl+l>': 'spawn -u card',
     },
 }
 
