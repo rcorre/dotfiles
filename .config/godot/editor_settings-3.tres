@@ -1,4 +1,4 @@
-[gd_resource type="EditorSettings" load_steps=15 format=2]
+[gd_resource type="EditorSettings" load_steps=16 format=2]
 
 [sub_resource type="InputEventKey" id=1]
 control = true
@@ -50,25 +50,30 @@ scancode = 88
 [sub_resource type="InputEventKey" id=10]
 control = true
 command = true
-scancode = 73
+scancode = 69
 
 [sub_resource type="InputEventKey" id=11]
 control = true
 command = true
-scancode = 84
+scancode = 73
 
 [sub_resource type="InputEventKey" id=12]
-scancode = 16777350
+control = true
+command = true
+scancode = 84
 
 [sub_resource type="InputEventKey" id=13]
-scancode = 90
+scancode = 16777350
 
 [sub_resource type="InputEventKey" id=14]
+scancode = 90
+
+[sub_resource type="InputEventKey" id=15]
 shift = true
 scancode = 90
 
 [resource]
-interface/editor/code_font_size = 15.0
+interface/editor/display_scale = 4
 interface/editor/quit_confirmation = false
 text_editor/highlighting/symbol_color = Color( 0.67, 0.785, 1, 1 )
 text_editor/highlighting/keyword_color = Color( 1, 0.44, 0.52, 1 )
@@ -179,8 +184,6 @@ editors/3d_gizmos/gizmo_colors/joint_body_a = Color( 0.6, 0.8, 1, 1 )
 editors/3d_gizmos/gizmo_colors/joint_body_b = Color( 0.6, 0.9, 1, 1 )
 text_editor/highlighting/gdscript/function_definition_color = Color( 0.4, 0.9, 1, 1 )
 text_editor/highlighting/gdscript/node_path_color = Color( 0.39, 0.76, 0.35, 1 )
-projects/::home::rcorre::code::gamedev::lichcraft = "/home/rcorre/code/gamedev/lichcraft"
-projects/::home::rcorre::gamedev::freedive = "/home/rcorre/gamedev/freedive"
 export/android/custom_build_sdk_path = ""
 export/web/http_host = "localhost"
 export/web/http_port = 8060
@@ -201,7 +204,9 @@ network/language_server/remote_port = 6008
 network/language_server/enable_smart_resolve = true
 network/language_server/show_native_symbols_in_editor = true
 network/language_server/use_thread = false
-projects/::home::rcorre::gamedev::quest = "/home/rcorre/gamedev/quest"
-projects/::home::rcorre::gamedev::fps = "/home/rcorre/gamedev/fps"
 editors/3d/navigation/show_viewport_rotation_gizmo = true
-shortcuts = [ "editor/close_scene", SubResource( 1 ), "editor/new_inherited_scene", SubResource( 2 ), "editor/new_scene", SubResource( 3 ), "editor/play", SubResource( 4 ), "editor/play_scene", SubResource( 5 ), "editor/quick_open_scene", SubResource( 6 ), "file_dialog/delete", SubResource( 7 ), "filesystem_dock/delete", SubResource( 8 ), "scene_tree/delete_no_confirm", SubResource( 9 ), "scene_tree/instance_scene", SubResource( 10 ), "spatial_editor/transform_dialog", SubResource( 11 ), "spatial_editor/view_cinematic_preview", SubResource( 12 ), "spatial_editor/view_display_normal", SubResource( 13 ), "spatial_editor/view_display_wireframe", SubResource( 14 ) ]
+projects/::home::rcorre::src::jethook = "/home/rcorre/src/jethook"
+favorite_projects/::home::rcorre::src::jethook = "/home/rcorre/src/jethook"
+projects/::home::rcorre::src::racing = "/home/rcorre/src/racing"
+projects/::home::rcorre::src::fps = "/home/rcorre/src/fps"
+shortcuts = [ "editor/close_scene", SubResource( 1 ), "editor/new_inherited_scene", SubResource( 2 ), "editor/new_scene", SubResource( 3 ), "editor/play", SubResource( 4 ), "editor/play_scene", SubResource( 5 ), "editor/quick_open_scene", SubResource( 6 ), "file_dialog/delete", SubResource( 7 ), "filesystem_dock/delete", SubResource( 8 ), "scene_tree/delete_no_confirm", SubResource( 9 ), "scene_tree/expand_collapse_all", SubResource( 10 ), "scene_tree/instance_scene", SubResource( 11 ), "spatial_editor/transform_dialog", SubResource( 12 ), "spatial_editor/view_cinematic_preview", SubResource( 13 ), "spatial_editor/view_display_normal", SubResource( 14 ), "spatial_editor/view_display_wireframe", SubResource( 15 ) ]
