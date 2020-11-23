@@ -11,7 +11,7 @@ export BROWSER=qutebrowser
 export HISTSIZE=50000
 export HISTCONTROL=erasedups
 export XDG_DESKTOP_DIR="$HOME"
-export FZF_DEFAULT_COMMAND='fd --hidden --no-ignore-vcs --type l --type f'
+export FZF_DEFAULT_COMMAND='rg --files'
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/rc"
 
 # colors and prompt
