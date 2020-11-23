@@ -230,9 +230,11 @@ call ale#linter#Define('gdscript3', {
 \   'name': 'gdscript3',
 \   'lsp': 'socket',
 \   'address': 'localhost:6008',
-\   'project_root': '/home/rcore/gamedev/quest',
+\   'project_root': '/home/rcorre/src/jethook',
 \})
-let g:ale_linters={'rust': ['rls']}
+
+let g:ale_fixers={'go': ['gofmt']}
+let g:ale_fix_on_save=1
 " }}}
 
 " deoplete {{{
