@@ -6,3 +6,10 @@ vulkan/
 xorg/
 qutebrowser/*
 !qutebrowser/userscripts/
+godot/
+Trash/
+fzf-history/
+recently-used.xbel
+krita*
+gsettings-data-convert
+zathura/

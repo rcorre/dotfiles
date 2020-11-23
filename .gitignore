@@ -16,3 +16,8 @@ doc
 .pki/
 .pulse-cookie
 Mail/
+go/
+.audacity-data/
+.python_history
+.itch/
+.pylint.d/
